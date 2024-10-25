@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.fondo-aperlado {
+	background-image: linear-gradient(to bottom, #ffe4e1, #ffffff);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invitacion {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.titulo {
+	font-size: 28px;
+	color: #ffaec9;
+	font-weight: bold;
+	font-family: 'Dancing Script', cursive;
+}
+
+.nombre-pareja {
+	font-size: 24px;
+	font-family: 'Great Vibes', cursive;
+	color: #666;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.subtitulo {
+	font-size: 20px;
+	color: #666;
+	font-style: italic;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+.texto-amor,
+.invitacion p {
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	color: #666;
+	margin: 20px auto;
+	width: 90%;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+/* Ajustes de imágenes */
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+/* Botones */
+.botones {
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+button {
+	background-color: #ffaec9;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 5px;
+	transition: background-color 0.2s ease;
+}
+
+button:hover {
+	background-color: #ffc5d5;
+}
+
+/* Estilos del contador */
+.contador {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.reloj {
+	margin: 10px;
+}
+
+.numeros {
+	font-size: 36px;
+	font-weight: bold;
+	color: #333;
+}
+
+.etiqueta {
+	font-size: 14px;
+	color: #666;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+	.contenedor {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.titulo {
+		font-size: 24px;
+	}
+
+	.subtitulo {
+		font-size: 18px;
+	}
+
+	.texto-amor,
+	.invitacion p {
+		font-size: 15px;
+		margin: 10px auto;
+	}
+
+	.nombre-pareja {
+		font-size: 20px;
+	}
+
+	.numeros {
+		font-size: 24px;
+	}
+
+	.etiqueta {
+		font-size: 12px;
+	}
+
+	/* Ajusta el botón para que se centre en la pantalla */
+	.centrar-boton {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	/* Ajusta las imágenes */
+	img {
+		width: 100%;
+		height: auto;
+		margin-top: 15px;
+	}
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Invitación a nuestra boda de aniversario</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="contenedor">
+		<div class="fondo-aperlado">
+			<!-- Texto grande en cursiva -->
+			<p class="nombre-pareja"><i><span style="font-size: 36px; font-family: 'Great Vibes', cursive;">Isidro & Silvia</span></i></p>
+			<!-- Botón para mostrar la invitación -->
+			<div class="centrar-boton">
+				<button id="mostrar-invitacion" onclick="mostrarInvitacion()">Mostrar Invitación</button>
+			</div>
+			<div class="invitacion" id="invitacion" style="display: none;"> <!-- Inicialmente oculto -->
+				<h1 class="titulo"><b>Bodas de Porcelana</b></h1>
+				
+				<p class="texto-amor">"El amor verdadero no tiene final, es una historia que cada día crece y se fortalece. Veinte años de amor profundo, de risas y complicidad. Un viaje de vida juntos, donde cada momento ha sido una razón para celebrar y reafirmar nuestra promesa. Hoy, brindamos por el amor que nos ha dado todo."</p>
+
+				<img src="flores.png" width="500" height="300">
+				<p>Hace 20 años comenzamos una historia juntos, y hoy queremos celebrar este camino de amor, risas y momentos compartidos. Nos gustaría invitarte a nuestra boda de aniversario, donde renovaremos nuestros votos y celebraremos junto a las personas que han sido parte de nuestra vida.</p>
+				<p>La ceremonia religiosa se llevará a cabo el día <b>14 de diciembre</b> a las <b>6:00 pm</b> en la iglesia Santa Elena de la Cruz<span id="iglesia"></span>.</p>
+				<div class="botones">
+					<button id="iglesia-btn" onclick="window.open('https://maps.app.goo.gl/a9i7G2Sgm3Sg5xJMA', '_blank')">Ver Ubicación</button>
+				</div>
+				<img src="novios.avif" width="600px" height="400px">
+
+				<!-- Mueve el contador aquí -->
+				<div class="contador">
+					<div class="reloj">
+						<span id="dias" class="numeros"></span>
+						<span class="etiqueta">Días</span>
+					</div>
+					<div class="reloj">
+						<span id="horas" class="numeros"></span>
+						<span class="etiqueta">Horas</span>
+					</div>
+					<div class="reloj">
+						<span id="minutos" class="numeros"></span>
+						<span class="etiqueta">Minutos</span>
+					</div>
+					<div class="reloj">
+						<span id="segundos" class="numeros"></span>
+						<span class="etiqueta">Segundos</span>
+					</div>
+				</div>
+				<p>Después te esperamos a las <b>8:00 pm</b> en el salón de eventos "Toledo" para festejar juntos este capítulo tan especial. <span id="salon"></span></p>
+				<div class="botones">
+					<button id="salon-btn" onclick="window.open('https://maps.app.goo.gl/Tf4zMvrxMPdEYdbH9', '_blank')">Ver Ubicación</button>
+				</div>
+				<img src="pastel.avif" height="300">
+				<p>Esperamos contar con tu presencia y compartir juntos una noche llena de recuerdos y alegría.</p>
+				<div class="botones">
+					<a href="https://wa.me/3333727921?text=Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Isidro%20y%20Silvia" target="_blank" id="confirmar">
+						<button>Confirmar asistencia</button>
+					</a>
+				</div>
+				
+			</div>
+			<audio id="cancion" src="videoplayback.m4a"></audio>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script>
+		function mostrarInvitacion() {
+			document.getElementById("invitacion").style.display = "block"; // Muestra la invitación
+			document.getElementById("mostrar-invitacion").style.display = "none"; // Oculta el botón
+			document.getElementById("cancion").play();
+		}
+	</script>
+</body>
+</html>
